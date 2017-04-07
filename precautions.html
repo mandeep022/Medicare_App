@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medicare</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+    <link href="css/font-awesome-4.6.2/font-awesome-4.6.2/css/font-awesome.css" rel="stylesheet" />
+    <link href="css/material-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/material-bootstrap/css/mdb.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDdDnx2fQnSYJ1JdKS_vVFYoslaN2OeLB4&amp;sensor=false&amp;libraries=places&amp;callback=initialize" async="async" defer="defer" type="text/javascript"></script>
+    <style>
+        .symptoms{
+        }
+        .symptoms li{
+            border-bottom:dotted 1px #dfdfdf;
+            padding:8px 0;
+            list-style-type:disc !important;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-6">
+                    <ul class="social">
+                        <li><a href="#"><i class="fa fa-envelope"></i>&nbsp;info@medicare.com</a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="logo">
+                    <div class="col-md-4">
+                        <div class="logo-img">
+                            <a href="#">
+                                <img src="img/logo.png" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="contact-info">
+                            <div class="week">
+                                <img src="img/date_icon.png" />
+                            </div>
+                            <p>
+                                Mon to Sat<br />
+                                9 am to 8 pm
+                            </p>
+                        </div>
+                        <div class="contact-info">
+                            <div class="week">
+                                <img src="img/mobile_icon.png" />
+                            </div>
+                            <p>
+                                call us<br />
+                                +91 00000 00000
+                            </p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="appoint">
+                            <a href="#">appointment    </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menubar">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <nav>
+                                <ul class="menu">
+                                    <li><a href="index.html">home</a></li>
+                                    <li><a href="#">doctors</a></li>
+                                    <li><a href="#">yoga</a></li>
+                                    <li><a href="#">excercises</a></li>
+                                    <li><a href="#">medication</a></li>
+                                    <li><a href="precautions.html">precautions</a></li>
+                                    <li><a href="#">gallery</a></li>
+                                </ul>
+                                <div class="clearfix"></div>
+                            </nav>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="search">
+                                <input type="text" id="txtCity" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" style="position:relative">
+                    <div class="cities">
+                        Select the city above to view hospitals
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="map" style="width:100px; height:100px; display:none"></div>
+    <section class="welcome" style="padding-bottom:30px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 offset-md-1">
+                    <div class="search">
+                        <select id="ddlDisease">
+                            <option value="-1">Select Disease</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="symptoms"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="img/map_dir.png" />
+                    <h6 class="title title-footer">address</h6>
+                    <p>
+                        E104, Dharti 2, Near Silverstar,
+                        Chennai, India
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <img src="img/emcall.png" />
+                    <h6 class="title title-footer">emergency (24/7)</h6>
+                    <p>
+                        Mobile: +91 9510357514
+                        <br />
+                        Toll Free : 123 456 7890
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <img src="img/mess.png" />
+                    <h6 class="title title-footer">Email Us</h6>
+                    <p>
+                        info@medicare.com &
+                        <br />
+                        info@medicarecenter.com
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <img src="img/clock.png" />
+                    <h6 class="title title-footer">Working Hours</h6>
+                    <p>
+                        Mon to Sat 9 AM to 11 PM
+                        <br />
+                        Sunday 10 AM to 6 PM
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
