@@ -1,4 +1,4 @@
-﻿var cities = { "1": "Ludhiana", "2": "Amritsar", "3": "Sangrur", "4": "Patiala", "5": "Ambala", "6": "Chandigarh", "7": "Jalandhar", "8": "New Delhi", "9": "Patna", "10": "Mhow" };
+
 var disease = { "1": "Fever", "2": "Abdominal Pain", "3": "Headache", "4": "Vomitting" };
 var precautions = [
     {
