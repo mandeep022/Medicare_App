@@ -12,4 +12,8 @@ STEPS FOR PRECAUTIONS:
             
             3) Then you need to select any specific disease from the list and it will show you the symptoms of that 
                particular disease.
+               
+YOGA: 
+            If you want to know about yoga then select the YOGA option in the menu bar and at the bottom it shows two options
+            of yoga that shows the images and also directions to do it when you select any option from them.
             
